@@ -1,10 +1,4 @@
-# Argo Environment Setup (Arch Linux)
-
-Install Python and pip using `pacman` if needed:
-
-```bash
-sudo pacman -S --needed python python-pip
-```
+# Argo Environment Setup 
 
 From the `float` directory, create and activate the environment:
 
