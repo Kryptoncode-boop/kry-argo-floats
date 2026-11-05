@@ -3,8 +3,8 @@ interpret_argo.py - turn the CSV saved by argo_lookup.py into a plain-language
 reading of one Argo profile: water structure, nutrients, plankton, oxygen, quality.
 
 Usage:
-    python interpret_argo.py argo_1902763_cycle34.csv
-    python interpret_argo.py 1902763           # newest argo_1902763_cycle*.csv in this folder
+    python interpret_argo.py argo_<wmo>_cycle<n>.csv
+    python interpret_argo.py <number>           # newest argo_1902763_cycle*.csv in this folder
     python interpret_argo.py FILE --plot       # also save a PNG (needs: pip install matplotlib)
     python interpret_argo.py FILE --strict     # never use uncalibrated (QC 3) sensor data
 
