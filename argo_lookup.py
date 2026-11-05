@@ -4,9 +4,9 @@ data from that profile, and the data type of every variable.
 
 Usage:
     pip install argopy
-    python argo_lookup.py 6902746            # all data the float sent, QC flags included
-    python argo_lookup.py 6902746 --clean    # only points that passed quality control
-    python argo_lookup.py 6902746 --full     # print every variable in the dtype table
+    python argo_lookup.py <number>            # all data the float sent, QC flags included
+    python argo_lookup.py <number> --clean    # only points that passed quality control
+    python argo_lookup.py <number> --full     # print every variable in the dtype table
 
 Saves argo_<wmo>_cycle<n>.csv. Set ARGO_HOST to use a different GDAC / local mirror.
 Needs internet: the index comes from the GDAC and the data from ERDDAP.
@@ -17,7 +17,6 @@ would get 0 rows. The default (expert mode) keeps everything and you check the *
 """
 import os
 import sys
-
 import numpy as np
 import pandas as pd
 from argopy import ArgoIndex, DataFetcher
